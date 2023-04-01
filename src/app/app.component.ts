@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'angular-configs-app';
 
   fakeFun() {
-    this.title = ' alksjhdflkjasdkfjhalskdfhlkjasdhfkajlshfakjlshdfaskjdaf';
+    this.title = 'alksjhdflkjasdkfjhalskdfhlkjasdhfkajlshfakjlshdfaskjdaf';
 
     console.log('hi');
     const thing = 1;
