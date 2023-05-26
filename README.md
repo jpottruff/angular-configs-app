@@ -1,27 +1,40 @@
-# AngularConfigsApp
+# Angular Project Configs
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+## Prettier
 
-## Development server
+Handles code _format/style_ linting
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Summary of Basics](https://prettier.io/docs/en/ignore.html)
 
-## Code scaffolding
+- [Ignoring Files/Folders](https://prettier.io/docs/en/ignore.html)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ESLint
 
-## Build
+Handles code _quality_ linting
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [Integrating Prettier and Linters](https://prettier.io/docs/en/integrating-with-linters.html)
 
-## Running unit tests
+  > `eslint-config-prettier` - Turns off all ESLint rules that have the potential to interfere with Prettier rules.
+  >
+  > `eslint-plugin-prettier` - Turns Prettier rules into ESLint rules.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+_NOTE: Angular project specific:_
+`ng add @angular-eslint/schematics`
 
-## Running end-to-end tests
+## Husky / Lint Staged
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+[Husky](https://www.npmjs.com/package/husky) handles commit hooks (eg. enforces lint rules pre-commit) and [lint-staged](https://www.npmjs.com/package/lint-staged) ensures **only** staged files are committed
 
-## Further help
+## Plugins
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+## Articles
+
+[ESLint and Typescript](https://khalilstemmler.com/blogs/typescript/eslint-for-typescript/)
+
+[ESLint and Prettier](https://khalilstemmler.com/blogs/tooling/prettier/)
+
+[Husky Precommit Hooks](https://khalilstemmler.com/blogs/tooling/enforcing-husky-precommit-hooks/)
