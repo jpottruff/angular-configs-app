@@ -8,14 +8,15 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "eslint:lint": "eslint . --ext .ts",
-    "prettier:lint": "prettier --config .prettierrc 'src/**/*.ts' --check",
     "prettier:format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "prettier:lint": "prettier --config .prettierrc 'src/**/*.ts' --check",
     "prepare": "husky install",
     "lint": "ng lint"
   },
   "lint-staged": {
     "src/**/*.ts": [
-      "prettier --write"
+      "prettier --write",
+      "eslint --fix --max-warnings=0 --ext .ts"
     ]
   },
   "private": true,
