@@ -35,7 +35,7 @@ For a local sonar instance via docker see [Try out Sonarqube](https://docs.sonar
 docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
 ```
 
-_NOTE: for [sonar-scanner](https://www.npmjs.com/package/sonar-scanner) to run properly / avoid permissions error you may need a JRE in your environment (eg. `sudo apt install openjdk-11-jdk`)_
+_NOTE: for [sonar-scanner](https://www.npmjs.com/package/sonar-scanner) to run properly / avoid permissions error you may need a JRE in your environment_
 
 ## Plugins
 
@@ -51,4 +51,4 @@ _NOTE: for [sonar-scanner](https://www.npmjs.com/package/sonar-scanner) to run p
 
 [Husky Precommit Hooks](https://khalilstemmler.com/blogs/tooling/enforcing-husky-precommit-hooks/)
 
-[Sonar in Angular Porject](https://medium.com/beingcoders/setup-sonarqube-with-angular-project-in-6-minutes-57a87b3ca8c4)
+[Sonar in Angular Project](https://medium.com/beingcoders/setup-sonarqube-with-angular-project-in-6-minutes-57a87b3ca8c4)
