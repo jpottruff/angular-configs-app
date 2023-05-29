@@ -11,7 +11,8 @@
     "prettier:format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "prettier:lint": "prettier --config .prettierrc 'src/**/*.ts' --check",
     "prepare": "husky install",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "sonar": "sonar-scanner"
   },
   "lint-staged": {
     "src/**/*.ts": [
@@ -57,6 +58,7 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "lint-staged": "^13.2.0",
     "prettier": "^2.8.7",
+    "sonar-scanner": "^3.1.0",
     "typescript": "~4.9.4"
   }
 }
